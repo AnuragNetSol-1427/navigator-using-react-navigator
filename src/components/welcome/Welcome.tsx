@@ -12,6 +12,10 @@ const Welcome = () => {
     console.log("login clicked")
     navigator.navigate("Login")
   }
+  const dateNTime = () => {
+    console.log("date and time will be showed")
+    navigator.navigate("DateNTime")
+  }
   return (
     <View>
       <Pressable onPress={signupBtn} >
@@ -19,6 +23,9 @@ const Welcome = () => {
       </Pressable>
       <Pressable onPress={loginBtn} >
         <Text>Click here to Login</Text>
+      </Pressable>
+      <Pressable onPress={dateNTime} >
+        <Text>Date and Time Screen</Text>
       </Pressable>
     </View>
   )
