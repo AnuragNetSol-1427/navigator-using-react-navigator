@@ -16,6 +16,10 @@ const Welcome = () => {
     console.log("date and time will be showed")
     navigator.navigate("DateNTime")
   }
+  const AsyncStoorage = () => {
+    console.log("A Screen is displayed in which implementation of async storage will be showed")
+    navigator.navigate("AsyncStoorage")
+  }
   return (
     <View>
       <Pressable onPress={signupBtn} >
@@ -26,6 +30,9 @@ const Welcome = () => {
       </Pressable>
       <Pressable onPress={dateNTime} >
         <Text>Date and Time Screen</Text>
+      </Pressable>
+      <Pressable onPress={AsyncStoorage} >
+        <Text>Async Storage Screen</Text>
       </Pressable>
     </View>
   )
